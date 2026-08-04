@@ -253,6 +253,10 @@ section{padding:88px 0}
 .cta-banner .btn-primary:hover{background:#f0f4fb}
 .cta-banner .btn-ghost{background:transparent;border-color:rgba(255,255,255,.3);color:#fff}
 .cta-banner .btn-ghost:hover{border-color:#fff}
+.panel-dark .btn-primary{background:#fff;color:var(--blue-deep)}
+.panel-dark .btn-primary:hover{background:#f0f4fb}
+.panel-dark .btn-ghost{background:transparent;border-color:rgba(255,255,255,.3);color:#fff}
+.panel-dark .btn-ghost:hover{border-color:#fff}
 
 /* ---------- Page hero (subpages) ---------- */
 .page-hero{padding:56px 0 20px}
