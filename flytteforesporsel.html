@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flytteforespørsel, Skullerud Flyttebyrå AS</title>
+<meta name="description" content="Send en uforpliktende flytteforespørsel til Skullerud Flyttebyrå AS. Fyll ut skjemaet med adresser, dato og hva som skal flyttes, så gir vi deg et pristilbud.">
+<meta name="theme-color" content="#0066cd">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo-link"><img src="assets/logo.png" alt="Skullerud Flyttebyrå AS"></a>
+    <nav class="main-nav">
+      <a href="index.html">Hjem</a>
+      <a href="vi-tilbyr.html">Vi tilbyr</a>
+      <a href="om-oss.html">Om oss</a>
+      <a href="flyttetips.html">Flyttetips</a>
+      <a href="flytteforesporsel.html" class="nav-cta desktop-only active">Prisforespørsel</a>
+    </nav>
+    <button class="hamburger" aria-label="Åpne meny">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="overlay"></div>
+<div class="mobile-drawer">
+  <div class="drawer-top"><button class="drawer-close" aria-label="Lukk meny">×</button></div>
+  <a href="index.html">Hjem</a>
+  <a href="vi-tilbyr.html">Vi tilbyr</a>
+  <a href="om-oss.html">Om oss</a>
+  <a href="flyttetips.html">Flyttetips</a>
+  <a href="flytteforesporsel.html" class="nav-cta">Prisforespørsel</a>
+  <div class="drawer-contact">
+    <a href="tel:+4769392000">Tlf: 69 39 20 00</a>
+    <a href="tel:+4793436226">Mob: 93 43 62 26</a>
+    <a href="mailto:post@skullerudflyttebyraa.no">post@skullerudflyttebyraa.no</a>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="kicker" data-animate>Flytteforespørsel</span>
+      <h1 data-animate>Få et uforpliktende pristilbud</h1>
+      <p data-animate>Fyll ut skjemaet under, så tar vi kontakt med et pristilbud på flyttingen din. Trenger du svar raskt, ring oss heller direkte.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:24px">
+    <div class="wrap">
+      <div class="request-grid" data-animate>
+        <div class="form-card">
+          <div class="form-success" style="display:none;background:#eaf6ee;border:1px solid #bfe3c9;color:#1a7a3d;padding:16px 18px;border-radius:12px;font-size:14px;font-weight:600;margin-bottom:24px">
+            Takk for forespørselen! Vi tar kontakt så snart vi kan.
+          </div>
+          <form class="move-request-form" action="https://formsubmit.co/post@skullerudflyttebyraa.no" method="POST">
+            <input type="hidden" name="_subject" value="Ny flytteforespørsel fra nettsiden">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Navn</label>
+                <input type="text" id="name" name="Navn" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefonnummer</label>
+                <input type="tel" id="phone" name="Telefon" required>
+              </div>
+              <div class="form-group full">
+                <label for="email">E-post</label>
+                <input type="email" id="email" name="E-post" required>
+              </div>
+              <div class="form-group">
+                <label for="from">Flytter fra (adresse)</label>
+                <input type="text" id="from" name="Flytter fra">
+              </div>
+              <div class="form-group">
+                <label for="to">Flytter til (adresse)</label>
+                <input type="text" id="to" name="Flytter til">
+              </div>
+              <div class="form-group">
+                <label for="date">Ønsket flyttedato</label>
+                <input type="text" id="date" name="Flyttedato" placeholder="dd.mm.åååå">
+              </div>
+              <div class="form-group">
+                <label for="type">Type flytting</label>
+                <select id="type" name="Type flytting">
+                  <option>Privat</option>
+                  <option>Bedrift / kontor</option>
+                  <option>Utland</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group full">
+              <label>Ønsket tilleggshjelp <span class="opt">(valgfritt)</span></label>
+              <div class="check-row">
+                <label class="check-pill"><input type="checkbox" name="Pakking" value="Ja"> Pakking</label>
+                <label class="check-pill"><input type="checkbox" name="Utpakking" value="Ja"> Utpakking</label>
+                <label class="check-pill"><input type="checkbox" name="Lagring" value="Ja"> Lagring</label>
+                <label class="check-pill"><input type="checkbox" name="Husvask" value="Ja"> Husvask</label>
+                <label class="check-pill"><input type="checkbox" name="Forsikring" value="Ja"> Forsikring</label>
+              </div>
+            </div>
+
+            <div class="form-group full">
+              <label for="extra">Merknader <span class="opt">(store gjenstander, etasje, heis, annen info)</span></label>
+              <textarea id="extra" name="Merknader"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">Send flytteforespørsel</button>
+            <p class="form-note">Vi svarer så raskt vi kan i vår åpningstid, man&ndash;fre kl. 08.00&ndash;16.00.</p>
+          </form>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <div class="contact-card">
+            <h3>Kontakt oss direkte</h3>
+            <p class="big">
+              Åpningstider tlf, kl. 08.00&ndash;16.00<br>
+              Tlf: <a href="tel:+4769392000">69 39 20 00</a><br>
+              Mob: <a href="tel:+4793436226">93 43 62 26</a><br>
+              E-post: <a href="mailto:post@skullerudflyttebyraa.no">post@skullerudflyttebyraa.no</a>
+            </p>
+          </div>
+          <div class="contact-card">
+            <h3>Vårt lager</h3>
+            <p class="big" style="font-size:15px;font-weight:600">Råbekksvingen 1<br>1617 Fredrikstad</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Skullerud Flyttebyrå AS">
+        <p>Skullerud Flyttebyrå AS har over 20 års erfaring med flytting. Vi utfører privat- og kontorflytting i inn- og utland.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sider</h4>
+        <ul>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="vi-tilbyr.html">Vi tilbyr</a></li>
+          <li><a href="om-oss.html">Om oss</a></li>
+          <li><a href="flyttetips.html">Flyttetips</a></li>
+          <li><a href="flytteforesporsel.html">Flytteforespørsel</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+4769392000">Tlf: 69 39 20 00</a></li>
+          <li><a href="tel:+4793436226">Mob: 93 43 62 26</a></li>
+          <li><a href="mailto:post@skullerudflyttebyraa.no">post@skullerudflyttebyraa.no</a></li>
+          <li>Råbekksvingen 1, 1617 Fredrikstad</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Skullerud Flyttebyrå AS</div>
+      <div>Nettside levert av <a href="https://dmarketing.no" target="_blank" rel="noopener">Dietrichs Marketing</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
